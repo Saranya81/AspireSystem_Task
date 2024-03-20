@@ -5,12 +5,8 @@ This project encompasses a dynamic travel website built using Bootstrap, featuri
 
 Day 2 Task:
 
-Developed a comprehensive travel website using Bootstrap.
-Integrated header and footer components for site navigation.
-Utilized iframes for embedding external content 
-Implemented a carousel to display attractive destinations.
-Included a testimonials section to showcase customer feedback.
-Added a registration page for user sign-up.
+Developed a comprehensive travel website using HTML,CSS,Bootstrap.
+
 
 What I Learned:
 
