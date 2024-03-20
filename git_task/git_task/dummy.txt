@@ -1,0 +1,2 @@
+Hi I am Saranya
+This is the Git activity in local machine
