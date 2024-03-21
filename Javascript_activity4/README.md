@@ -1,4 +1,4 @@
-🎲 JAVASCRIPT DIECE GAME
+🎲 JAVASCRIPT DIECE GAME [Self Exploration]
 
 A simple JavaScript project for simulating a dice game.
 
