@@ -1,13 +1,15 @@
-🎲 JavaScript Dice Game
+🎲 JAVASCRIPT DIECE GAME
 
 A simple JavaScript project for simulating a dice game.
 
 🚀 Quick Start
+
 Clone or download the repository.
 
 Click "Roll Dice" to start the game.
 
 ℹ️ How to Play
+
 Two players roll dice.
 
 The one with the higher value wins.
@@ -17,6 +19,7 @@ If values are equal, it's a draw.
 Try it: https://saranya81.github.io/DieceGame/
 
 🛠️ Technologies Used
+
 HTML
 CSS
 JavaScript
