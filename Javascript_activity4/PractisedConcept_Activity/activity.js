@@ -11,8 +11,8 @@ console.log(arrlen);
 console.log("-----------Map Function---------------");
 const fruits = ["apple", "banana", "orange", "grape", "kiwi"];
 // convert a string to uppercase
-function capitalize(str) {
-  return str.toUpperCase();
+function capitalize(word) {
+  return word.toUpperCase();
 }
 const capitalizedFruits = fruits.map(capitalize);
 console.log("Original Fruits: ", fruits);
