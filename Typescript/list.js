@@ -27,8 +27,8 @@ console.log("Sliced students:", slicedStudents);
 studentList.reverse();
 console.log("Reversed students:", studentList);
 // IndexOf function
-var index = studentList.findIndex(function (student) { return student.name === "charu" && student.age === 18 && student.grade === "A"; });
-console.log("Index of Alice:", index);
+var index = studentList.findIndex(function (student) { return student.name === "Charu" && student.age === 18 && student.grade === "A"; });
+console.log("Index of charu:", index);
 addStudent("Frank", 19, "B");
 removeLastStudent();
 console.log("Student details:");
