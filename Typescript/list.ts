@@ -34,7 +34,7 @@ console.log("Reversed students:", studentList);
 
 // IndexOf function
 const index = studentList.findIndex(student => student.name === "charu" && student.age === 18 && student.grade === "A"); 
-console.log("Index of Alice:", index);
+console.log("Index of Charu:", index);
 
 addStudent("Frank", 19, "B");
 
