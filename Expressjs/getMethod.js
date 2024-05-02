@@ -1,7 +1,7 @@
 //  // title : Expressjs
 // //Author :Saranya
-// //Created date:02-04-2024
-// // last modified:02-04-2024
+// //Created date:02-05-2024
+// // last modified:02-05-2024
 // GET -method
 var express=require("express");
 var getMethod=express();
