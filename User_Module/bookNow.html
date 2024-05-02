@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+/*book now -form*/
+.Booknow {
+  font-family: 'Lexend', sans-serif;
+          font-size:16px;
+ 
+  width: 600px;
+  max-width: 900px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* background-color: hsla(120, 2%, 11%, 0.1); */
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   
+    /* margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem; */
+    backdrop-filter: blur(px);
+}
+
+.Booknow label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Booknow input[type="text"],
+.Booknow input[type="number"],
+.Booknow input[type="date"],
+.Booknow select,
+.Booknow button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+/* Button styling */
+.Booknow button {
+  margin-top:5%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Booknow button:hover {
+  background-color: #0056b3;
+}
+
+/* Close icon styling */
+#close-Booknow {
+  display: block;
+  font-size: 24px;
+  color: #ccc;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#phone {
+  width: 100%; 
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+#close-Booknow:hover {
+  color: #999;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 999; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5); 
+}
+.modal p{
+  color: #000000;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10%;
+  width: 30%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+  .Booknow {
+    max-width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <img src="images/booktrio.jpg" style="height: 500px;width: 100%;">
+    <form id="Booknow" class="Booknow">
+        <i class="ri-close-fill close-icon" id="close-Booknow"></i>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+            <label for="packageName">Package Name:</label>
+            <input type="text" id="packageName" name="packageName" required>
+            <label for="numPeople">Number of People:</label>
+            <input type="number" id="numPeople" name="numPeople" required>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+            <label for="accommodation">Accommodation:</label>
+            <select id="accommodation" name="accommodation">
+                <option value="resort">Resort</option>
+                <option value="guesthouse">Guesthouse</option>
+                <option value="not_required">Not Required</option> <!-- Modified value -->
+            </select>
+            <label for="travelFacilities">Travel Facilities:</label>
+            <select id="travelFacilities" name="travelFacilities">
+                <option value="bus">Bus</option>
+                <option value="train">Train</option>
+                <option value="flight">Flight</option>
+                <option value="not_required">Not Required</option> <!-- Modified value -->
+            </select>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <!-- <input type="hidden" id="source" name="source" value="book_now"> -->
+            <button type="submit">Submit</button>
+      </form>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Your response has been successfully submitted. Our team will contact you soon. If you have any queries, please feel free to contact us.</p>
+        </div>
+      </div>
+</body>
+</html>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("Booknow");
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
+        submitForm();
+    });
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    function submitForm() {
+        form.style.display = "none";}
+});
+
+
+
+</script>
