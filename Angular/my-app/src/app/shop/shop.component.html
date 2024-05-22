@@ -1,0 +1,16 @@
+<p>shop works!</p>
+
+<!-- One way binding -->
+<h1>{{shoppingMallName}}</h1> 
+<!-- <input type="text" (input)="onUpdateShopName($event)"> -->
+<input type="text" [(ngModel)]="shopName"/>
+<p>{{shopName}}</p>
+
+
+<!-- property binding  & Event binding -->
+<button [disabled]="isButtonActive" (click)="onCreateShop()">Add Shop</button>  
+<p>{{createNewShop}}</p>
+
+<!-- <p *ngIf="isShopCreated; else noShop ">Shop was created,shop name is {{shopName}}</p> -->
+
+<!-- <ng-template  -->
