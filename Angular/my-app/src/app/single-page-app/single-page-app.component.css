@@ -1,0 +1,129 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .background-image {
+    background-color: #333; /* Fallback color */
+    background-image: url("/assests/travel_HD.jpg"); 
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  .app-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-name img {
+    width: 40px; /* Adjust logo size as needed */
+    margin-right: 10px;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content overlay styles */
+  .content-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Button color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555; /* Button hover color */
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-bottom {
+    background-color: #222; /* Darker footer background color */
+    padding: 10px 0;
+  }
+  

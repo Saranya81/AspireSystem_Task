@@ -1,0 +1,38 @@
+<p>account works!</p>
+
+Select Account Type:<select [(ngModel)]="accountType">
+    
+    <option>Business</option>
+    <option>Salary</option>
+    <option>Savings</option>
+</select>
+<table>
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Account Holder Name</th>
+            <th>Account Type</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (account of accounts; track account) {
+            <tr>
+                @if (account.accountType==accountType){
+                    <td>{{account.accountNumber}}</td>
+                    <td>{{account.accountHolderName}}</td>
+                    <td>{{account.accountType}}</td>
+                    <td>{{account.amount}}</td>
+                    <td>{{account.date}}</td>
+                    <!-- <td [ngSwitch]="getAccountStatus(account.amount)">
+                        <span *ngSwitchCase="'Inactive'">Inactive</span>
+                        <span *ngSwitchCase="'Active'">Active</span>
+                        <span *ngSwitchCase="'Loyal'">Loyal</span>
+                    </td> -->
+                }
+            </tr>
+        }
+    </tbody>
+</table>

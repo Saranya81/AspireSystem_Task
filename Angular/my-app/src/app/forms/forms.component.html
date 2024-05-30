@@ -1,0 +1,38 @@
+<!--Titlle:Forms
+Author:Saranya R-->
+
+<p>forms works!</p>
+<div class="form-container">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" [(ngModel)]="user.fullName" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" required email>
+      </div>
+      
+      <div class="form-group">
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" [(ngModel)]="user.studentId" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" required>
+      </div>
+      
+      <button type="submit" [disabled]="userForm.invalid">Submit</button>
+    </form>
+
+    <div *ngIf="successMessage" class="success-message">
+      {{ successMessage }}
+  </div>
+  

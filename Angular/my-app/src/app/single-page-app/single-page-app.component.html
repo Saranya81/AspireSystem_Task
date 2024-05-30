@@ -1,0 +1,99 @@
+<p>single-page-app works!</p>
+<!--Titlle:Single Page Travel Website
+Author:Saranya R
+created Date:29-05-2024-->
+<div class="background-image" id="navbar">
+    <div class="navbar">
+      <div class="app-name">
+        Travel Explorer
+      </div>
+      <ul>
+        <li><a (click)="scrollTo('home')">Home</a></li>
+        <li><a (click)="scrollTo('destinations')">Destinations</a></li>
+        <li><a (click)="scrollTo('packages')">Packages</a></li>
+        <li><a (click)="scrollTo('about')">About Us</a></li>
+        <li><a (click)="scrollTo('contact')">Contact Us</a></li>
+      </ul>
+    </div>
+</div>
+  
+<div class="content-overlay" id="home">
+    <h1>Welcome to Travel Explorer</h1>
+    <h3>Discover the world with us.</h3>
+</div>
+
+
+<!-- destinations -->
+<div class="destinations"  id="destinations">
+  <h1>Discover Destinations</h1>
+  <div class="gallery-container">
+      <div class="destination-card" *ngFor="let destination of destinations">
+          <h4>{{ destination.name }}</h4>
+          <p>Price: {{ destination.price }}</p>
+          <p>Number of People: {{ destination.numPeople }}</p>
+          <p>Number of Days: {{ destination.numDays }}</p>
+      </div>
+  </div>
+</div>
+
+<!-- packages -->
+<div class="packages"  id="packages">
+  <h1>Explore Activities</h1>
+  <div class="package-container">
+      <div class="package-card" *ngFor="let package of packages">
+          <h4>{{ package.name }}</h4>
+          <p>Price: {{ package.price }}</p>
+          <p>Number of People: {{ package.numPeople }}</p>
+          <p>Number of Days: {{ package.numDays }}</p>
+      </div>
+  </div>
+</div>
+
+
+<!-- about -->
+<div class="about-container" id="about">
+    <div class="about-content">
+      <h2>About Travel Explorer</h2>
+      <div class="about-text">
+        <p>Welcome to Travel Explorer, your ultimate guide to unforgettable adventures around the globe. Whether you're seeking tropical beaches, historic landmarks, or bustling cityscapes, we've got you covered. Our mission is to provide a platform for travelers to explore diverse cultures, landscapes, and experiences.</p>
+      </div>
+    </div>
+    <div class="about-image">
+    </div>
+</div>
+  
+<!-- contact -->
+<div class="contact-container" id="contact">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+</div>
+  
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Travel Explorer</h3>
+        <p>123 Explorer Street, Cityville, Country</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </div>
+</footer>

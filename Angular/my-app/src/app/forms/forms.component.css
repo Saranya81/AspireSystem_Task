@@ -1,0 +1,39 @@
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 1em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.25em;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 0.7em 1.5em;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  

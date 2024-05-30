@@ -1,0 +1,44 @@
+<!--Titlle:Bank Account-Task
+Author:Saranya R-->
+
+<p>bank-account works!</p>
+<p>account works!</p>
+
+Select Account Type:
+<select [(ngModel)]="bankAccountType">
+  <option>Business</option>
+  <option>Salary</option>
+  <option>Savings</option>
+</select>
+
+<table>
+  <thead>
+    <tr>
+      <th>Account Number</th>
+      <th>Account Holder Name</th>
+      <th>Account Type</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <ng-container *ngIf="account.accountType === bankAccountType">
+        <td>{{ account.accountNumber }}</td>
+        <td>{{ account.accountHolderName }}</td>
+        <td>{{ account.accountType }}</td>
+        <td>{{ account.amount }}</td>
+        <td>{{ account.date }}</td>
+        <td>
+          <div [ngSwitch]="getAccountDetails(account.amount)">
+            <span *ngSwitchCase="'Inactive'">Inactive</span>
+            <span *ngSwitchCase="'Active'">Active</span>
+            <span *ngSwitchCase="'Loyal'">Loyal</span>
+            <span *ngSwitchDefault>Unknown</span>
+          </div>
+        </td>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>
