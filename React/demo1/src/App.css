@@ -1,0 +1,6 @@
+.hover-text {
+  transition: color 0.3s;
+}
+
+.hover-text:hover {
+  color: blue; }
